@@ -1,0 +1,180 @@
+.play_now {
+    display: none;
+}
+
+.active {
+    display: block;
+}
+
+.play_now-backdrop {
+    z-index: 10000;
+    position: fixed;
+    display: block;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: #00000080;
+}
+
+.play_now-wrapper {
+    min-width: 66.7%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    background-color: #0f1923;
+    color: #f4f1ed;
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    z-index: 10010;
+    border-bottom: 1px solid #968d8c;
+    border-top: 1px solid #968d8c;
+    max-height: 99vh;
+    overflow-y: auto;
+}
+
+.play_now-inner {
+    text-align: center;
+    padding: 20px;
+    min-height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.play_now-inner-close-btn {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    top: 16px;
+    right: 16px;
+    cursor: pointer;
+    border: 0;
+    background-color: #0f1923;
+    padding: 0;
+    color: #fff;
+    font-size: 18px;
+    transition: font-size 0.2s ease-out;
+}
+
+.play_now-inner-close-btn:hover {
+    font-size: 20px;
+    transition: font-size 0.2s ease-out;
+
+}
+
+.play_now-inner-close-btn::after {
+    content: "";
+    display: block;
+    width: 4px;
+    height: 4px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: #fff;
+}
+
+.play_now-inner-content {
+    text-align: center;
+    padding: 20px;
+    min-height: 28vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    flex-direction: column;
+    
+}
+
+.play_now-inner-content-title {
+    margin-bottom: 40px;
+    color: #F4F1ED;
+}
+
+.play_now-inner-content-title > h2 {
+    margin: 0;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: -1px;
+}
+
+.play_now-inner-content-title > h2 > span {
+    margin: 0 30px;
+}
+
+.play_now-inner-account {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.play_now-inner-account-sign {
+    margin: 0 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.play_now-inner-account-sign > span {
+    margin: 0 0 16px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.play_now-inner-account-sign > button {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 19px 30px;
+    width: 256px;
+    height: 54px;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border: 0;
+    cursor: pointer;
+}
+
+.play_now-inner-account-sign > button::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 266px;
+    height: 30px;
+    border-top: 1px solid rgba(236,232,225,.5);
+    border-left: 1px solid rgba(236,232,225,.5);
+    border-right: 1px solid rgba(236,232,225,.5);
+    left: -6px;
+    top: -10px;
+}
+
+.play_now-inner-account-sign > button::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 266px;
+    height: 30px;
+    border-bottom: 1px solid rgba(236,232,225,.5);
+    border-left: 1px solid rgba(236,232,225,.5);
+    border-right: 1px solid rgba(236,232,225,.5);
+    left: -6px;
+    bottom: -10px;
+}
+
+.new_account-white {
+    background-color: #ece8e1;
+}
+
+.new_account-red {
+    background-color: #ff4655 ;
+}
+
+.play_now-inner-account-sign > button:hover {
+    background-color: #000;
+    color: #fff;
+}

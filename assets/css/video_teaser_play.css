@@ -1,0 +1,38 @@
+.video_teaser_play {
+    z-index: 11111;
+    display: none;
+}
+
+.play {
+    display: block;
+}
+.teaser_play_wrapper {
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+}
+
+.teaser_play_wrapper > video {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 80vw;
+    height: auto;
+}
+
+.teaser_play-close-btn {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    top: 16px;
+    right: 16px;
+    cursor: pointer;
+    border: 0;
+    background-color: #0f1923;
+    padding: 0;
+    color: #fff;
+    font-size: 18px;
+    transition: font-size 0.2s ease-out;
+}
